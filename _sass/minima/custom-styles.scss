@@ -2,52 +2,109 @@
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
 @import "minima/fastpages-styles";
 
-
+$link-base-color: rgb(35, 55, 77);
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-
-a:hover,
-a:visited,
-a:link,
-a:active {
-    color: inherit;
+a {
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
     text-decoration: none !important;
+  }
 }
 
 .ft-300 {
-    font-weight: 300;
+  font-weight: 300;
+}
+
+footer {
+  a {
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      color: white;
+    }
+  }
+  p.feed-subscribe {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  .feed-subscribe .svg-icon {
+    padding: 0;
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.home {
+  a {
+    :hover,
+    :visited,
+    :link,
+    :active {
+      color: inherit;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.site-nav {
+  a:hover {
+    text-decoration: none;
+    font-weight: 900 !important;
+  }
+}
+
+.ft-300 {
+  font-weight: 300;
 }
 
 .ft-900 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .page-content,
 body {
-    font-family: "Lato", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+  font-family: "Lato", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue",
+    "Helvetica", "Tahoma", "Arial", sans-serif !important;
 }
 
 body {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .site-nav .page-link {
-    font-size: 16px;
-    font-weight: 300;
-    color: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: inherit;
+}
+.category-tags-link {
+  color: blue !important;
+  font-weight: 500;
+  background: #ddd;
+  padding: 5px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.post-meta-title,
+.post-meta {
+  margin-bottom: 0.8em !important;
 }
 
 .site-header {
-    border-top: 0px solid #424242;
-    border-bottom: 0px solid #e8e8e8;
-    min-height: 60px;
-    line-height: 54px;
-    padding-top: 5px;
-    background: white;
-    color: #040404;
-    position: relative;
-    /*box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+  border-top: 0px solid #424242;
+  border-bottom: 0px solid #e8e8e8;
+  min-height: 60px;
+  line-height: 54px;
+  padding-top: 5px;
+  background: white;
+  color: #040404;
+  position: relative;
+  /*box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
               0 2px 2px rgba(0,0,0,0.20), 
               0 4px 4px rgba(0,0,0,0.15), 
               0 8px 8px rgba(0,0,0,0.10),
@@ -55,53 +112,85 @@ body {
 }
 
 .site-title {
-    font-size: 1.325rem;
-    font-weight: 400;
-    letter-spacing: 0px;
-    margin-top: 3px;
+  font-size: 1.325rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-top: 3px;
 }
 
 .site-title,
 .site-title:visited {
-    color: inherit;
+  color: inherit;
 }
 
 .header-maintext {
-    margin-top: 60px;
-    font-size: 42px;
+  margin-top: 60px;
+  font-size: 42px;
 }
 
 .header-subtext {
-    font-size: 19px;
-    max-width: 400px;
+  font-size: 19px;
+  max-width: 500px;
 }
 
-.home-post-header{
-    font-size:28px;
-    margin-top:60px;
+.home-post-header {
+  font-size: 28px;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 600px) {
-    .site-nav {
-        padding-top: 4px;
-    }
+  .site-nav {
+    padding-top: 4px;
+  }
 }
 
 .footer-col-wrapper,
 .social-links {
-    font-size: 0.9375rem;
-    color: inherit;
+  font-size: 0.9375rem;
+  color: inherit;
 }
 
 .site-footer {
-    background: rgb(35, 55, 77);;
-    color: white;
+  background: rgb(35, 55, 77);
+  color: white;
 }
 
 .social-media-list li a,
 .pagination li a {
-    border: 0px solid #e8e8e8;
+  border: 0px solid #e8e8e8;
 }
 
+.page-description {
+  font-weight: 300;
+  margin-bottom: 1.2rem !important;
+}
+
+.social-links i {
+  font-size: 30px;
+}
+
+.post-title {
+  font-weight: 900;
+}
+
+.post-content {
+  padding-top: 15px;
+}
+
+.highlight {
+  border-radius: 5px;
+}
+
+.footer-description {
+  font-size: 1.2rem;
+}
+
+.post-meta {
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 1.7vw;
+}
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight";
