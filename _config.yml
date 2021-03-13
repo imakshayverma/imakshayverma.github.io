@@ -6,8 +6,10 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: TwoClicks
-description: Personal Blog of Akshay Verma to share a few experiments, thoughts and ideas.
+title: Akshay Verma
+description: A space to share a few thoughts and learnings from different experiments and
+  experiences. I indulge in interests ranging from code, design, culture,
+  philosophy.
 
 # TwoClicks metaphorically represents our human need to improve the accessibility of resources and tools with minimal hurdles as part of our evolution, thus this is my way to document my journey in doing the same. While this happens to be a generic blog
 github_username: imakshayverma

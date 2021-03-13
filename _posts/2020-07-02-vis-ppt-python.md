@@ -5,6 +5,7 @@ description: Presentation are usually boring. What if you could change that. Thi
 categories: [Python, PowerPoint, Data Visualization, OpenXML]
 title: Building Data Visualizations in PowerPoint Using Python
 sticky_rank: 1
+image_banner: https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 The role of data to make decisions in organizations across all the sectors has changed the structural design of our organizations. Our need to be accurate in our decision making has emphasized the need to understand data better. To fulfill the need, the technology around Data Visualizations in the past couple of years has evolved by leaps and bounds.
