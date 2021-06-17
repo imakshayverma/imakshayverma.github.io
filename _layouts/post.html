@@ -50,9 +50,29 @@ layout: default
     {% endif -%}
   </header>
 
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content | toc  }}
   </div>
+  
+  <div class="row">
+    <div class="col-6">
+      {% if page.previous.url %}
+        <a class="prev" href="{{site.baseurl}}/{{page.previous.url}}">
+          <span class="other-post-link">Previous Post</span> 
+          &laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+    </div>
+    <div class="col-6 text-right">
+          <a class="next" href="{{site.baseurl}}/{{page.next.url}}">
+            <span class="other-post-link">Next Post</span>
+            {{page.next.title}} &raquo;</a>
+        {% endif %}
+    </div>
+  </div>
+
+
   {%- if page.comments -%}
     {%- include utterances.html -%}
   {%- endif -%}

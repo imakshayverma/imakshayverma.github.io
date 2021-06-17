@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About Me
-redirect_to: https://imakshayverma.github.io/
 ---
 
 This is where you put the contents of your _About_ page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.

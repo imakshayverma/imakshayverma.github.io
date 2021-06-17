@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {%- include head.html -%}
-
   <body>
-
-      <div class="card-wrapper align-self-center">
+<div class="main-wrapper">
+  <div class="card-wrapper">
         
     {%- include header.html -%}
 
@@ -17,6 +16,7 @@
 
     {%- include footer.html -%}
   </div>
+</div>
 
 </body>
 

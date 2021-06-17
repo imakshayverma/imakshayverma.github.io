@@ -19,10 +19,7 @@
 .page-content {
   -webkit-font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility !important;
-  font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue",
-    "Helvetica", "Tahoma", "Arial", sans-serif !important;
 }
-
 // make non-headings slightly lighter
 .post-content p,
 .post-content li {
@@ -163,8 +160,8 @@ h6:hover .anchor-link {
   opacity: 35%;
 }
 .category-tags-link {
-  color: rgb(187, 129, 129) !important;
-  font-size: 13px !important;
+  color: rgb(187, 129, 129);
+  font-size: 13px;
 }
 
 // Search Page Styles

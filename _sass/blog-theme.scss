@@ -1,0 +1,158 @@
+$link-base-color: rgb(35, 55, 77);
+$serif-font: "Merriweather", serif;
+$sanserif-font: "Lato", san-serif;
+$font-color-1: #23374d;
+
+body {
+  background-color: #838383;
+  font: 400 16px/1.5 $sanserif-font;
+}
+
+.ft-300 {
+  font-weight: 300;
+}
+
+.ft-900 {
+  font-weight: 900;
+}
+
+a {
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    color: $font-color-1;
+    text-decoration: none !important;
+  }
+}
+
+.main-wrapper {
+  width: 70%;
+  max-width: 45em;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  background: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  // border-radius: 12px;
+}
+
+@media screen and (max-width: 865px) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
+// For Presentation Only
+
+$fa-github: #333;
+$fa-github-alt: $fa-github;
+$fa-github-square: $fa-github;
+$fa-linkedin: #0976b4;
+$fa-linkedin-square: $fa-linkedin;
+$fa-instagram: #3f729b;
+$fa-linkedin: #0976b4;
+$fa-twitter: #55acee;
+$fa-twitter-square: $fa-twitter;
+
+.fab {
+  // Default color for undefined
+  color: #efefef;
+
+  &.fa-github {
+    color: $fa-github;
+  }
+  &.fa-github-alt {
+    color: $fa-github-alt;
+  }
+  &.fa-github-square {
+    color: $fa-github-square;
+  }
+
+  &.fa-instagram {
+    color: transparent;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background: -webkit-radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  &.fa-linkedin {
+    color: $fa-linkedin;
+  }
+  &.fa-linkedin-square {
+    color: $fa-linkedin-square;
+  }
+  &.fa-twitter {
+    color: $fa-twitter;
+  }
+  &.fa-twitter-square {
+    color: $fa-twitter-square;
+  }
+}
+
+.post-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.post-content h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.post-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.post-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #777;
+}
+
+.feed-subscribe span {
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+.other-post-link {
+  display: block;
+  font-weight: 700;
+}
