@@ -156,3 +156,25 @@ $fa-twitter-square: $fa-twitter;
   display: block;
   font-weight: 700;
 }
+
+.search-input-wrap input {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.page-content {
+  font-family: "Lato", sans-serif;
+  padding: 1em;
+  min-height: 60vh;
+}
+
+.post-link {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 865px) {
+  .page-content {
+    padding: 1em 0em;
+  }
+}
