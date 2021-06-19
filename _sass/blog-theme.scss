@@ -55,6 +55,9 @@ $fa-instagram: #3f729b;
 $fa-linkedin: #0976b4;
 $fa-twitter: #55acee;
 $fa-twitter-square: $fa-twitter;
+$fa-y-combinator: #f0652f;
+$fa-reddit: #ff4500;
+$fa-reddit-square: $fa-reddit;
 
 .fab {
   // Default color for undefined
@@ -103,6 +106,53 @@ $fa-twitter-square: $fa-twitter;
   &.fa-twitter-square {
     color: $fa-twitter-square;
   }
+  &.fa-y-combinator {
+    color: $fa-y-combinator;
+  }
+  &.fa-reddit {
+    color: $fa-reddit;
+  }
+  &.fa-reddit-alien {
+    color: $fa-reddit;
+  }
+  &.fa-reddit-square {
+    color: $fa-reddit-square;
+  }
+}
+
+.sharebuttons {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  i {
+    font-size: 1.7rem;
+    margin: 0px 5px;
+  }
+}
+footer {
+  a {
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      color: #333;
+    }
+  }
+  p.feed-subscribe {
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding-left: 1.2em;
+  }
+  .feed-subscribe .svg-icon {
+    padding: 0;
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.site-footer {
+  border-top: 2px solid #e8e8e8;
+  padding: 30px 0;
 }
 
 .post-content h1 {
@@ -173,8 +223,28 @@ $fa-twitter-square: $fa-twitter;
   font-weight: 700;
 }
 
-@media screen and (max-width: 865px) {
+.site-nav {
+  top: auto;
+}
+
+@media screen and (max-width: 425px) {
   .page-content {
     padding: 1em 0em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-footer {
+    padding: 0;
+    text-align: center;
+
+    .social-media-list,
+    .pagination {
+      margin-left: 0em;
+      justify-content: center;
+    }
+  }
+  footer p.feed-subscribe {
+    padding-left: 0;
   }
 }

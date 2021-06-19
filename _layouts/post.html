@@ -54,15 +54,17 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content | toc  }}
   </div>
+
+  {% include share.html %}
   
   <div class="row">
     <div class="col-6">
-      {% if page.previous.url %}
+      {% if page.previous.url and page.previous.hide != true %}
         <a class="prev" href="{{site.baseurl}}/{{page.previous.url}}">
           <span class="other-post-link">Previous Post</span> 
           &laquo; {{page.previous.title}}</a>
       {% endif %}
-      {% if page.next.url %}
+      {% if page.next.url and page.next.hide != true %}
     </div>
     <div class="col-6 text-right">
           <a class="next" href="{{site.baseurl}}/{{page.next.url}}">

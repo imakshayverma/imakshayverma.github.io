@@ -114,32 +114,6 @@ code {
   margin: 0;
 }
 
-.site-footer {
-  border-top: 2px solid #e8e8e8;
-  padding: 30px 0;
-}
-
-footer {
-  a {
-    &:hover,
-    &:visited,
-    &:link,
-    &:active {
-      color: #333;
-    }
-  }
-  p.feed-subscribe {
-    font-weight: 600;
-    font-size: 1.7rem;
-    padding-left: 1.2em;
-  }
-  .feed-subscribe .svg-icon {
-    padding: 0;
-    width: 30px;
-    height: 22px;
-  }
-}
-
 // .home {
 //   a {
 //     :hover,

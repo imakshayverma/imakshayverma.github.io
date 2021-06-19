@@ -120,5 +120,7 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
+permalink: /:title:output_ext
+
 whitelist:
   - jekyll-redirect-from
