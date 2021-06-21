@@ -4,7 +4,8 @@ $sanserif-font: "Lato", san-serif;
 $font-color-1: #23374d;
 
 body {
-  background-color: #838383;
+  background-color: #82868e;
+  background-image: url("/blog/images/noise.png");
   font: 400 16px/1.5 $sanserif-font;
 }
 
@@ -33,9 +34,13 @@ a {
   position: relative;
   min-height: 100vh;
   height: auto;
-  background: white;
+  background: #fffef8;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   // border-radius: 12px;
+}
+
+.page-link {
+  background: inherit;
 }
 
 @media screen and (max-width: 865px) {
@@ -247,6 +252,11 @@ footer .fab.fa-github {
 
 .site-nav {
   top: auto;
+}
+
+.site-nav .page-link {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 425px) {
