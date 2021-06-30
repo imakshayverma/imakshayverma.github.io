@@ -60,14 +60,14 @@ layout: default
   <div class="row">
     <div class="col-6">
       {% if page.previous.url and page.previous.hide != true %}
-        <a class="prev" href="{{site.baseurl}}/{{page.previous.url}}">
+        <a class="prev" href="{{page.previous.url | relative_url}}">
           <span class="other-post-link">Previous Post</span> 
           &laquo; {{page.previous.title}}</a>
       {% endif %}
       {% if page.next.url and page.next.hide != true %}
     </div>
     <div class="col-6 text-right">
-          <a class="next" href="{{site.baseurl}}/{{page.next.url}}">
+          <a class="next" href="{{page.next.url | relative_url}}">
             <span class="other-post-link">Next Post</span>
             {{page.next.title}} &raquo;</a>
         {% endif %}
