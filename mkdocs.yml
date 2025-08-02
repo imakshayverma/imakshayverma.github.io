@@ -1,0 +1,80 @@
+site_name: Akshay Verma
+site_url: https://imakshayverma.github.io
+theme:
+  name: material
+  palette: 
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: black
+      accent: indigo
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: indigo
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  
+
+  favicon: assets/favicon-32x32.png
+  icon:
+    logo: material/home
+  features:
+    - navigation.indexes
+    - navigation.tabs
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/imakshayverma
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/imakshayverma
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/imakshayverma
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/akshayverma295
+
+extra_css:
+  - stylesheets/extra_css.css
+
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+  - tags
+  - rss:
+      match_path: "blog/posts/.*"
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
+
+hooks:
+  - hooks/socialmedia.py  
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Blog:
+      - blog/index.md
+    # Tags: blog/tags.md
+
